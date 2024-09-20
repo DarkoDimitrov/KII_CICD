@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ./StudentAppCodeFirst-master/StudentAppCodeFirst-master/StudentAppCodeFirst.sln
+      run: dotnet restore ./StudentAppCodeFirst-master/StudentAppCodeFirst-master/StudentApp.sln
     - name: Build
-      run: dotnet build ./StudentAppCodeFirst-master/StudentAppCodeFirst-master/StudentAppCodeFirst.sln --no-restore
+      run: dotnet build ./StudentAppCodeFirst-master/StudentAppCodeFirst-master/StudentApp.sln --no-restore
     - name: Test
-      run: dotnet test ./StudentAppCodeFirst-master/StudentAppCodeFirst-master/StudentAppCodeFirst.sln --no-build --verbosity normal
+      run: dotnet test ./StudentAppCodeFirst-master/StudentAppCodeFirst-master/StudentApp.sln --no-build --verbosity normal
